@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ConvertWithEase — Secure Document Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="wrapper">
+
+    <!-- ── HEADER ── -->
+    <header>
+      <div class="logo">
+        <div class="logo-dot"></div>
+        ConvertWithEase
+      </div>
+      <div class="header-right">
+        <span class="badge">FREE · SECURE</span>
+      </div>
+    </header>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <h1>Convert any<br/><span class="accent">document</span> instantly.</h1>
+    </section>
+
+    <!-- ── MAIN CARD ── -->
+    <div class="card">
+
+      <!-- Drop Zone -->
+      <div class="drop-zone" id="dropZone">
+        <input type="file" id="fileInput"
+          accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.xls,.jpg,.jpeg,.png,.gif,.webp,.html,.txt"/>
+        <div class="drop-icon">📄</div>
+        <div class="drop-label">Drop your file here</div>
+        <div class="drop-sub">or click to browse · max 25MB</div>
+      </div>
+
+      <!-- File Info -->
+      <div class="file-info" id="fileInfo">
+        <div class="file-icon-box" id="fileIconBox">📄</div>
+        <div class="file-details">
+          <div class="file-name" id="fileName">document.pdf</div>
+          <div class="file-size" id="fileSize">2.4 MB</div>
+        </div>
+        <button class="file-remove" id="fileRemove" title="Remove file">✕</button>
+      </div>
+
+      <!-- Format Options -->
+      <div class="options">
+        <div class="opt-group">
+          <label for="fromFormat">From</label>
+          <select id="fromFormat">
+            <option value="auto">Auto-detect</option>
+            <option value="pdf">PDF</option>
+            <option value="docx">Word (.docx)</option>
+            <option value="pptx">PowerPoint (.pptx)</option>
+            <option value="xlsx">Excel (.xlsx)</option>
+            <option value="jpg">Image (.jpg / .png)</option>
+            <option value="html">HTML</option>
+            <option value="txt">Plain Text</option>
+          </select>
+        </div>
+        <div class="arrow-box">→</div>
+        <div class="opt-group">
+          <label for="toFormat">To</label>
+          <select id="toFormat">
+            <option value="pdf">PDF</option>
+            <option value="docx">Word (.docx)</option>
+            <option value="pptx">PowerPoint (.pptx)</option>
+            <option value="xlsx">Excel (.xlsx)</option>
+            <option value="jpg">Image (.jpg)</option>
+            <option value="png">Image (.png)</option>
+            <option value="html">HTML</option>
+            <option value="txt">Plain Text</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Convert Button -->
+      <button class="btn-convert" id="btnConvert" disabled>
+        Convert Now
+      </button>
+
+      <!-- Progress Bar -->
+      <div class="progress-wrap" id="progressWrap">
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-label" id="progressLabel">Uploading file…</div>
+      </div>
+
+      <!-- Result -->
+      <div class="result" id="result">
+        <div class="result-icon">✅</div>
+        <div class="result-text">
+          <strong id="resultName">converted.pdf</strong>
+          <span id="resultMeta">Ready to download · Deleted from server ✓</span>
+        </div>
+        <a href="#" class="btn-download" id="btnDownload">↓ Download</a>
+      </div>
+
+      <!-- Error -->
+      <div class="error-msg" id="errorMsg"></div>
+
+      <!-- Privacy micro-note -->
+      <p class="micro-note">
+        Your file is converted and immediately deleted from our server.
+        We never store, read, or share your documents.
+      </p>
+
+    </div><!-- /.card -->
+
+    <!-- ── PRIVACY PROMISE ── -->
+    <section class="privacy-banner">
+      <div class="privacy-banner-title">Our Privacy Promise</div>
+      <div class="privacy-grid">
+        <div class="privacy-item">
+          <span class="privacy-icon">⚡</span>
+          <div>
+            <strong>Instant deletion</strong>
+            <p>Your file is permanently deleted the moment your download starts — not after an hour, immediately.</p>
+          </div>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-icon">🚫</span>
+          <div>
+            <strong>We never read your files</strong>
+            <p>Conversion is fully automated by LibreOffice. No human ever opens, reads, or accesses your documents.</p>
+          </div>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-icon">🔒</span>
+          <div>
+            <strong>Encrypted in transit</strong>
+            <p>All files travel over HTTPS. Your document is encrypted between your browser and our server at all times.</p>
+          </div>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-icon">📵</span>
+          <div>
+            <strong>Zero accounts, zero tracking</strong>
+            <p>No email. No sign-up. No cookies. No analytics. We don't know who you are — by design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SUPPORTED FORMATS ── -->
+    <section class="supported">
+      <div class="supported-title">// supported formats</div>
+      <div class="chips">
+        <span class="chip pdf">PDF</span>
+        <span class="chip word">DOCX</span>
+        <span class="chip word">DOC</span>
+        <span class="chip ppt">PPTX</span>
+        <span class="chip ppt">PPT</span>
+        <span class="chip word">XLSX</span>
+        <span class="chip img">JPG</span>
+        <span class="chip img">PNG</span>
+        <span class="chip img">WEBP</span>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section class="steps">
+      <div class="steps-title">How it works</div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">📂</div>
+          <h3>Upload</h3>
+          <p>Drag & drop or browse. File travels over encrypted HTTPS directly to our conversion engine.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">⚙️</div>
+          <h3>Convert</h3>
+          <p>LibreOffice converts your file fully automatically. No human involvement, ever.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">🗑️</div>
+          <h3>Delete & Download</h3>
+          <p>Your download starts and the file is permanently deleted from our server in the same instant.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="footer-top">
+        <span class="footer-logo">Convertly</span>
+      </div>
+      <div class="footer-bottom">
+        <span id="conversionCounter"></span>
+        Files deleted instantly · No accounts · No tracking · No ads
+      </div>
+    </footer>
+
+  </div><!-- /.wrapper -->
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
