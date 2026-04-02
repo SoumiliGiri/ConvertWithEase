@@ -31,6 +31,9 @@ something I learned along the way.
 | Security | flask-limiter, python-magic, CORS |
 | Font | Lexend Deca (self-hosted) |
 
+## Screenrecord
+[Watch Video](Screenrecord/Recording.mp4)
+
 ## Project Structure
 ```
 ConvertWithEase/
@@ -69,13 +72,13 @@ python server.py
 http://localhost:5000
 ```
 
-## 📦 Requirements
+## Requirements
 
 - Python
 - LibreOffice (for Office ↔ PDF conversions)
 - pip packages listed in `requirements.txt`
 
-## 🧠 What I Learned
+## What I Learned
 
 - How Flask routes and serves files
 - How browsers and servers communicate via HTTP requests
