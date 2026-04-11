@@ -85,4 +85,4 @@ http://localhost:5000
 - Why `/tmp/` paths don't work on Windows and how to fix it
 - How environment variables (PATH) work on Windows
 - What rate limiting, CORS, and file type scanning actually do
-- How to structure a full-stack project from scratch
+- How to structure a full-stack project from scratch.
