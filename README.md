@@ -31,10 +31,10 @@ something I learned along the way.
 | Security | flask-limiter, python-magic, CORS |
 | Font | Lexend Deca (self-hosted) |
 
-##Screenshot
-![ConvertWithEase](./screenshot/Screenshot 2026-04-23 121509)
-![ConvertWithEase](./screenshot/Screenshot 2026-04-23 122003)
-![ConvertWithEase](./screenshot/Screenshot 2026-04-23 122021)
+## Screenshot
+![ConvertWithEase](./screenshot/Screenshot 2026-04-23 121509.png)
+![ConvertWithEase](./screenshot/Screenshot 2026-04-23 121509.png)
+![ConvertWithEase](./screenshot/Screenshot 2026-04-23 122021.png)
 ## Screenrecord
 
 
