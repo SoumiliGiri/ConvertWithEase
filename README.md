@@ -32,9 +32,9 @@ something I learned along the way.
 | Font | Lexend Deca (self-hosted) |
 
 ## Screenshot
-![ConvertWithEase](./screenshot/Screenshot 2026-04-23 121509.png)
-![ConvertWithEase](./screenshot/Screenshot 2026-04-23 121509.png)
-![ConvertWithEase](./screenshot/Screenshot 2026-04-23 122021.png)
+![ConvertWithEase](./screenshot/Screenshot-1.png)
+![ConvertWithEase](./screenshot/Screenshot-2.png)
+![ConvertWithEase](./screenshot/Screenshot-3.png)
 ## Screenrecord
 
 
