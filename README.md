@@ -31,8 +31,12 @@ something I learned along the way.
 | Security | flask-limiter, python-magic, CORS |
 | Font | Lexend Deca (self-hosted) |
 
+##Screenshot
+![ConvertWithEase](./screenshot/Screenshot 2026-04-23 121509)
+![ConvertWithEase](./screenshot/Screenshot 2026-04-23 122003)
+![ConvertWithEase](./screenshot/Screenshot 2026-04-23 122021)
 ## Screenrecord
-[Watch Video](Screenrecord/Recording.mp4)
+
 
 ## Project Structure
 ```
@@ -82,7 +86,6 @@ http://localhost:5000
 
 - How Flask routes and serves files
 - How browsers and servers communicate via HTTP requests
-- Why `/tmp/` paths don't work on Windows and how to fix it
 - How environment variables (PATH) work on Windows
 - What rate limiting, CORS, and file type scanning actually do
 - How to structure a full-stack project from scratch.
